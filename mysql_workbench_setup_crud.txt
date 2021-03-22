@@ -1,0 +1,25 @@
+SELECT * FROM users
+SELECT first_name FROM users
+SELECT first_name, last_name FROM users
+
+SELECT * FROM users
+WHERE id = 2;
+
+SELECT * FROM users
+WHERE id = 2 or id = 3;
+
+SELECT * FROM users
+WHERE first_name LIKE "%n"
+
+SELECT * FROM users
+WHERE first_name LIKE "%n"
+ORDER BY birthday DESC
+
+INSERT INTO tweets (tweet, user_id, created_at, updated_at)
+VALUES ("HELLO!", 1, NOW(), NOW());
+
+UPDATE users SET first_name = "Kobe"
+WHERE id = 1;
+
+DELETE FROM tweets
+WHERE id = 13;
